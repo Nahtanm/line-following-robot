@@ -63,4 +63,37 @@ O robô é capaz de identificar linhas escuras sobre superfície clara e ajustar
 ---
 
 ## 📊 Lógica de Decisão
+Sensor E | Sensor D | Ação
+
+Branco   | Branco   | Segue em frente
+Branco   | Preto    | Vira à direita
+Preto    | Branco   | Vira à esquerda
+Preto    | Preto    | Para
+
+
+---
+
+## 🚀 Como usar
+
+1. Faça upload do código no Arduino.  
+2. Ajuste os valores de calibração (`pisoBranco`, `pisoPreto`) conforme o ambiente.  
+3. Coloque o robô sobre a linha preta.  
+4. Ligue a fonte e deixe o robô seguir o percurso.
+
+---
+
+## 🧩 Funções principais
+
+- `moveFrente(vel)` → movimentação reta  
+- `moveDireitaPouco(vel)` → curva leve para direita  
+- `moveEsquerdaPouco(vel)` → curva leve para esquerda  
+- `paraCarro()` → parada total  
+
+---
+
+## 📝 Licença
+
+Este projeto pode ser utilizado para fins educacionais e pessoais sem restrições.
+
+---
 
